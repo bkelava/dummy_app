@@ -2,4 +2,4 @@
 
 Dummy app for kubernetes testing purpose.
 
-### THANKS
+### THANKS !
