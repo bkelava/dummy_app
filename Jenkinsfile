@@ -63,5 +63,10 @@ pipeline {
                 }
             }
         }
+        stage("Trigger Kubernetes pipeline") {
+            steps {
+                build job: 'Kubernetes Deployment', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
+            }
+        }
     }
 }
